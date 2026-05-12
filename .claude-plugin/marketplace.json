@@ -9,7 +9,10 @@
   "plugins": [
     {
       "name": "braindrain",
-      "source": "./",
+      "source": {
+        "source": "github",
+        "repo": "emgiezet/braindrain"
+      },
       "description": "Status-line indicator: green SMART below 100k tokens, red DUMB at or above. Based on Dex Horthy's Smart Zone / Dumb Zone framing and Chroma's Context Rot research.",
       "author": {
         "name": "Maksymilian Małecki",
