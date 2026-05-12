@@ -3,7 +3,7 @@
   "name": "braindrain",
   "description": "Single-plugin marketplace for braindrain — a Claude Code status-line indicator that flips between SMART (green) and DUMB (red) at 100k input tokens.",
   "owner": {
-    "name": "Maksymilian Małecki",
+    "name": "Max Małecki",
     "email": "maxmalecki@gmail.com"
   },
   "plugins": [
@@ -15,7 +15,7 @@
       },
       "description": "Status-line indicator: green SMART below 100k tokens, red DUMB at or above. Based on Dex Horthy's Smart Zone / Dumb Zone framing and Chroma's Context Rot research.",
       "author": {
-        "name": "Maksymilian Małecki",
+        "name": "Max Małecki",
         "url": "https://github.com/emgiezet"
       },
       "homepage": "https://github.com/emgiezet/braindrain",
