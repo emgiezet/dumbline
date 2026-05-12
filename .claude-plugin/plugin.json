@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "braindrain",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Claude Code status-line indicator: green SMART below 100k tokens, red DUMB at or above. Based on Dex Horthy's Smart Zone / Dumb Zone framing.",
   "author": {
     "name": "Maksymilian Małecki",
