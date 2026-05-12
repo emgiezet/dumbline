@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "braindrain",
+  "version": "0.1.0",
+  "description": "Claude Code status-line indicator: green SMART below 100k tokens, red DUMB at or above. Based on Dex Horthy's Smart Zone / Dumb Zone framing.",
+  "author": {
+    "name": "Maksymilian Małecki",
+    "email": "maxmalecki@gmail.com",
+    "url": "https://github.com/emgiezet"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/emgiezet/braindrain",
+  "repository": "https://github.com/emgiezet/braindrain",
+  "keywords": ["statusline", "context", "context-rot", "smart-zone", "dumb-zone", "monitoring", "tokens"]
+}
