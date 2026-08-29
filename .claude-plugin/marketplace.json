@@ -1,25 +1,25 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
-  "name": "braindrain",
-  "description": "Single-plugin marketplace for braindrain — a Claude Code status-line indicator that flips between SMART (green) and DUMB (red) at 100k input tokens.",
+  "name": "dumbline",
+  "description": "Single-plugin marketplace for dumbline — a Claude Code status-line indicator that flips between SMART (green) and DUMB (red) at 100k input tokens.",
   "owner": {
     "name": "Max Małecki",
     "email": "maxmalecki@gmail.com"
   },
   "plugins": [
     {
-      "name": "braindrain",
+      "name": "dumbline",
       "source": {
         "source": "github",
-        "repo": "emgiezet/braindrain"
+        "repo": "emgiezet/dumbline"
       },
       "description": "Status-line indicator: green SMART below 100k tokens, red DUMB at or above. Based on Dex Horthy's Smart Zone / Dumb Zone framing and Chroma's Context Rot research.",
       "author": {
         "name": "Max Małecki",
         "url": "https://github.com/emgiezet"
       },
-      "homepage": "https://github.com/emgiezet/braindrain",
-      "keywords": ["statusline", "context", "context-rot", "smart-zone", "dumb-zone", "tokens"]
+      "homepage": "https://github.com/emgiezet/dumbline",
+      "keywords": ["statusline", "context", "context-rot", "smart-zone", "dumb-zone", "monitoring", "tokens"]
     }
   ]
 }

@@ -1,4 +1,4 @@
-# braindrain
+# dumbline
 
 > *A Claude Code status-line plugin that watches your context fill up. The next section explains the idea — Smart Zone vs. Dumb Zone — that the indicator is built on.*
 
@@ -60,8 +60,8 @@ The practical upshot for a coding agent: **the advertised "1M context window" is
 Inside Claude Code:
 
 ```
-/plugin marketplace add emgiezet/braindrain
-/plugin install braindrain@braindrain
+/plugin marketplace add emgiezet/dumbline
+/plugin install dumbline@dumbline
 ```
 
 Then follow step 3 below to wire the `statusLine` config.
@@ -70,12 +70,12 @@ Then follow step 3 below to wire the `statusLine` config.
 
 1. Clone the repo somewhere stable:
    ```bash
-   git clone git@github.com:emgiezet/braindrain.git ~/.claude/plugins/braindrain
+   git clone git@github.com:emgiezet/dumbline.git ~/.claude/plugins/dumbline
    ```
 
 2. Make the script executable:
    ```bash
-   chmod +x ~/.claude/plugins/braindrain/scripts/statusline.sh
+   chmod +x ~/.claude/plugins/dumbline/scripts/statusline.sh
    ```
 
 3. Add this block to `~/.claude/settings.json` (merge with any existing top-level keys; don't nest inside other blocks):
@@ -83,7 +83,7 @@ Then follow step 3 below to wire the `statusLine` config.
    {
      "statusLine": {
        "type": "command",
-       "command": "/absolute/path/to/braindrain/scripts/statusline.sh",
+       "command": "/absolute/path/to/dumbline/scripts/statusline.sh",
        "padding": 1
      }
    }
@@ -118,7 +118,7 @@ The indicator only diagnoses. Mitigations, in rough order of effort:
 ## Troubleshooting
 
 - **Status line doesn't appear.** Check `claude --debug` output for the first invocation. Common causes: script not executable, `disableAllHooks: true` in settings, or the workspace-trust prompt wasn't accepted.
-- **Shows `braindrain: install jq`.** Install `jq`.
+- **Shows `dumbline: install jq`.** Install `jq`.
 - **Bar looks empty even when DUMB.** You're seeing the `0 tokens` fallback. Wait for the next assistant turn, or check that your Claude Code version reports `context_window.total_input_tokens` as current-context (≥ v2.1.132).
 - **Numbers don't match `/context`.** The status line reflects the most recent API response; `/context` reflects the next prepared request. A small drift is normal between turns.
 

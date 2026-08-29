@@ -6,3 +6,5 @@
 .vscode/
 .claude/
 
+# Local working notes for this repo; not shipped to plugin consumers.
+CLAUDE.md

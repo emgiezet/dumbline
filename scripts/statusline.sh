@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# braindrain: Claude Code status-line script.
+# dumbline: Claude Code status-line script.
 # Reads the session JSON on stdin and prints a colored one-line verdict:
 #   - green "SMART" while total input tokens are below 100,000
 #   - red   "DUMB"  once total input tokens reach 100,000
@@ -7,7 +7,7 @@
 set -u
 
 if ! command -v jq >/dev/null 2>&1; then
-  printf '%s\n' "braindrain: install jq"
+  printf '%s\n' "dumbline: install jq"
   exit 0
 fi
 
